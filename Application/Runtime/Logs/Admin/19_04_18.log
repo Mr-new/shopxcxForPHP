@@ -1,0 +1,56 @@
+[ 2019-04-18T14:25:27+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/getInGiftList
+ERR: 1054:Unknown column 'wechat_step_gift.title' in 'field list'
+ [ SQL语句 ] : SELECT wechat_step_ingift.id,wechat_step_ingift.datetime,wechat_step_user.nickName,wechat_step_user.tel,wechat_step_user.avatarUrl,wechat_step_user.city,wechat_step_user.province,wechat_step_gift.gift,wechat_step_gift.title,wechat_step_gift.remarks FROM `wechat_step_ingift` INNER JOIN wechat_step_user ON wechat_step_ingift.userid=wechat_step_user.id INNER JOIN wechat_step_gift ON wechat_step_ingift.giftid=wechat_step_gift.id  WHERE `nickName` LIKE '%%' OR `tel` LIKE '%%' OR `gift` LIKE '%%' ORDER BY wechat_step_ingift.datetime desc LIMIT 0,10  
+
+[ 2019-04-18T14:25:27+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/exportExcel
+ERR: 1054:Unknown column 'wechat_step_gift.title' in 'field list'
+ [ SQL语句 ] : SELECT wechat_step_ingift.id,wechat_step_ingift.datetime,wechat_step_user.nickName,wechat_step_user.tel,wechat_step_user.avatarUrl,wechat_step_user.city,wechat_step_user.province,wechat_step_gift.gift,wechat_step_gift.title,wechat_step_gift.remarks FROM `wechat_step_ingift` INNER JOIN wechat_step_user ON wechat_step_ingift.userid=wechat_step_user.id INNER JOIN wechat_step_gift ON wechat_step_ingift.giftid=wechat_step_gift.id  ORDER BY wechat_step_ingift.datetime desc 
+
+[ 2019-04-18T14:26:25+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/exportExcel
+ERR: 1054:Unknown column 'wechat_step_gift.title' in 'field list'
+ [ SQL语句 ] : SELECT wechat_step_ingift.id,wechat_step_ingift.datetime,wechat_step_user.nickName,wechat_step_user.tel,wechat_step_user.avatarUrl,wechat_step_user.city,wechat_step_user.province,wechat_step_gift.gift,wechat_step_gift.title,wechat_step_gift.remarks FROM `wechat_step_ingift` INNER JOIN wechat_step_user ON wechat_step_ingift.userid=wechat_step_user.id INNER JOIN wechat_step_gift ON wechat_step_ingift.giftid=wechat_step_gift.id  ORDER BY wechat_step_ingift.datetime desc 
+
+[ 2019-04-18T14:26:30+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/exportExcel
+ERR: 1054:Unknown column 'wechat_step_gift.title' in 'field list'
+ [ SQL语句 ] : SELECT wechat_step_ingift.id,wechat_step_ingift.datetime,wechat_step_user.nickName,wechat_step_user.tel,wechat_step_user.avatarUrl,wechat_step_user.city,wechat_step_user.province,wechat_step_gift.gift,wechat_step_gift.title,wechat_step_gift.remarks FROM `wechat_step_ingift` INNER JOIN wechat_step_user ON wechat_step_ingift.userid=wechat_step_user.id INNER JOIN wechat_step_gift ON wechat_step_ingift.giftid=wechat_step_gift.id  ORDER BY wechat_step_ingift.datetime desc 
+
+[ 2019-04-18T14:28:20+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/exportExcel
+ERR: 1054:Unknown column 'wechat_step_gift.title' in 'field list'
+ [ SQL语句 ] : SELECT wechat_step_ingift.id,wechat_step_ingift.datetime,wechat_step_user.nickName,wechat_step_user.tel,wechat_step_user.avatarUrl,wechat_step_user.city,wechat_step_user.province,wechat_step_gift.gift,wechat_step_gift.title,wechat_step_gift.remarks FROM `wechat_step_ingift` INNER JOIN wechat_step_user ON wechat_step_ingift.userid=wechat_step_user.id INNER JOIN wechat_step_gift ON wechat_step_ingift.giftid=wechat_step_gift.id  ORDER BY wechat_step_ingift.datetime desc 
+
+[ 2019-04-18T14:28:58+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/getGiftList
+ERR: 1054:Unknown column 'title' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`gift`,`title`,`remarks` FROM `wechat_step_gift` ORDER BY datetime desc 
+
+[ 2019-04-18T14:29:55+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/exportExcel
+ERR: 1054:Unknown column 'wechat_step_gift.title' in 'field list'
+ [ SQL语句 ] : SELECT wechat_step_ingift.id,wechat_step_ingift.datetime,wechat_step_user.nickName,wechat_step_user.tel,wechat_step_user.avatarUrl,wechat_step_user.city,wechat_step_user.province,wechat_step_gift.gift,wechat_step_gift.title,wechat_step_gift.remarks FROM `wechat_step_ingift` INNER JOIN wechat_step_user ON wechat_step_ingift.userid=wechat_step_user.id INNER JOIN wechat_step_gift ON wechat_step_ingift.giftid=wechat_step_gift.id  ORDER BY wechat_step_ingift.datetime desc 
+
+[ 2019-04-18T14:32:08+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/exportExcel
+ERR: 1054:Unknown column 'wechat_step_gift.title' in 'field list'
+ [ SQL语句 ] : SELECT wechat_step_ingift.id,wechat_step_ingift.datetime,wechat_step_user.nickName,wechat_step_user.tel,wechat_step_user.avatarUrl,wechat_step_user.city,wechat_step_user.province,wechat_step_gift.gift,wechat_step_gift.title,wechat_step_gift.remarks FROM `wechat_step_ingift` INNER JOIN wechat_step_user ON wechat_step_ingift.userid=wechat_step_user.id INNER JOIN wechat_step_gift ON wechat_step_ingift.giftid=wechat_step_gift.id  ORDER BY wechat_step_ingift.datetime desc 
+
+[ 2019-04-18T14:37:34+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/getGiftList
+ERR: 1054:Unknown column 'title' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`gift`,`title`,`remarks` FROM `wechat_step_gift` ORDER BY datetime desc 
+
+[ 2019-04-18T14:49:02+08:00 ] 127.0.0.1 /index.php/Admin/StepWaiting/getStepWaitingList
+ERR: 1052:Column 'datetime' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `wechat_step_satisfy` INNER JOIN wechat_step_user ON wechat_step_satisfy.userid=wechat_step_user.id  ORDER BY datetime desc LIMIT 0,20  
+
+[ 2019-04-18T14:57:53+08:00 ] 127.0.0.1 /index.php/Admin/StepWaiting/getStepWaitingList?pageIndex=1&number=10
+ERR: 1054:Unknown column 'datetime' in 'field list'
+ [ SQL语句 ] : SELECT `step`,`datetime` FROM `wechat_step_record` WHERE ( userid='3' ) 
+
+[ 2019-04-18T15:02:53+08:00 ] 127.0.0.1 /index.php/Admin/StepWaiting/getStepParticipantList
+ERR: 非法操作:getStepParticipantList
+
+[ 2019-04-18T15:42:57+08:00 ] 127.0.0.1 /index.php/Admin/StepCoupon/getStepParticipantList
+ERR: 非法操作:getStepParticipantList
+
+[ 2019-04-18T16:04:15+08:00 ] 127.0.0.1 /index.php/Admin/StepPrize/getPrizeList
+ERR: 非法操作:getPrizeList
+
+[ 2019-04-18T16:21:18+08:00 ] 127.0.0.1 /index.php/Admin/StepGift/getStepPrizeList
+ERR: 非法操作:getStepPrizeList
+

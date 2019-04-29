@@ -1,0 +1,10 @@
+[ 2019-04-15T09:46:31+08:00 ] 127.0.0.1 /index.php/Admin/StepParticipant/getParticipantList
+ERR: 非法操作:getParticipantList
+
+[ 2019-04-15T14:13:49+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/getInGiftList
+ERR: 1054:Unknown column 'code' in 'where clause'
+ [ SQL语句 ] : SELECT wechat_step_ingift.id,wechat_step_ingift.datetime,wechat_step_user.nickName,wechat_step_user.tel,wechat_step_user.city,wechat_step_user.province,wechat_step_gift.gift,wechat_step_gift.title,wechat_step_gift.remarks FROM `wechat_step_ingift` INNER JOIN wechat_step_user ON wechat_step_ingift.userid=wechat_step_user.id INNER JOIN wechat_step_gift ON wechat_step_ingift.giftid=wechat_step_gift.id  WHERE `nickName` LIKE '%%' OR `tel` LIKE '%%' OR `code` LIKE '%%' OR `prize` LIKE '%%' ORDER BY wechat_step_ingift.datetime desc LIMIT 0,20  
+
+[ 2019-04-15T14:29:16+08:00 ] 127.0.0.1 /index.php/Admin/StepInYes/getStepParticipantList
+ERR: 非法操作:getStepParticipantList
+

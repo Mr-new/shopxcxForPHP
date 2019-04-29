@@ -1,0 +1,4 @@
+[ 2019-04-22T14:12:42+08:00 ] 127.0.0.1 /index.php/Admin/StepParticipant/getStepParticipantList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'nickName!='' ) ORDER BY datetime desc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT * FROM `wechat_step_user` WHERE ( Arrayand nickName!='' ) ORDER BY datetime desc LIMIT 0,10  
+

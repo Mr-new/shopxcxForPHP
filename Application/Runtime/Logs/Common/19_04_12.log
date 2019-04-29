@@ -1,0 +1,6 @@
+[ 2019-04-12T13:07:24+08:00 ] 127.0.0.1 /index.php/Setp/Login/test
+ERR: 无法加载模块:Setp
+
+[ 2019-04-12T13:07:24+08:00 ] 127.0.0.1 /favicon.ico
+ERR: 无法加载模块:Favicon
+

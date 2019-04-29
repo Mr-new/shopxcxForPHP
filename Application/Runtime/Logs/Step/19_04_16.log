@@ -1,0 +1,4 @@
+[ 2019-04-16T17:55:27+08:00 ] 127.0.0.1 /index.php/Step/Index/getMyCardList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY wechat_step_prize_record.datetime desc' at line 1
+ [ SQL语句 ] : SELECT wechat_step_prize_record.id,wechat_step_prize.title FROM `wechat_step_prize_record` INNER JOIN wechat_step_prize ON wechat_step_prize_record.prizeid=wechat_step_prize.id  WHERE ( wechat_step_prize_record.userid= ) ORDER BY wechat_step_prize_record.datetime desc 
+

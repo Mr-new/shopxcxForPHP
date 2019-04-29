@@ -1,0 +1,15 @@
+[ 2019-04-03T17:14:04+08:00 ] 127.0.0.1 /index.php/Admin/AdminUser/getConsultationList?select_word=&pageIndex=1&number=10
+ERR: 非法操作:getConsultationList
+
+[ 2019-04-03T17:14:07+08:00 ] 127.0.0.1 /index.php/Admin/AdminUser/getConsultationList?select_word=&pageIndex=1&number=10
+ERR: 非法操作:getConsultationList
+
+[ 2019-04-03T17:14:16+08:00 ] 127.0.0.1 /index.php/Admin/AdminUser/getConsultationList?select_word=&pageIndex=1&number=10
+ERR: 非法操作:getConsultationList
+
+[ 2019-04-03T18:37:11+08:00 ] 127.0.0.1 /index.php/Admin/Test/index
+ERR: Call to undefined function Admin\Controller\get_rand()
+
+[ 2019-04-03T18:38:03+08:00 ] 127.0.0.1 /index.php/Admin/Test/index
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+

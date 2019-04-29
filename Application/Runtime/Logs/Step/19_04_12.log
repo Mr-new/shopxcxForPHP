@@ -1,0 +1,24 @@
+[ 2019-04-12T13:21:06+08:00 ] 127.0.0.1 /index.php/Step/Login/getUserStep
+ERR: 1146:Table 'shopxcx.wechat_step_record' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wechat_step_record`
+
+[ 2019-04-12T13:21:58+08:00 ] 127.0.0.1 /index.php/Step/Login/getUserStep
+ERR: 1146:Table 'shopxcx.wechat_step_record' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wechat_step_record`
+
+[ 2019-04-12T13:23:07+08:00 ] 127.0.0.1 /index.php/Step/Login/getUserStep
+ERR: 1054:Unknown column 'date' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `wechat_step_user` WHERE ( openid='oYlJJ5Fs8VzKYE3xOKvKn-IuuMLM' and date='2019-04-12' ) LIMIT 1  
+
+[ 2019-04-12T13:24:16+08:00 ] 127.0.0.1 /index.php/Step/Login/getUserStep
+ERR: 1146:Table 'shopxcx.wechat_step_record' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wechat_step_record`
+
+[ 2019-04-12T13:24:31+08:00 ] 127.0.0.1 /index.php/Step/Login/getUserStep
+ERR: 1146:Table 'shopxcx.wechat_step_record' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wechat_step_record`
+
+[ 2019-04-12T13:25:19+08:00 ] 127.0.0.1 /index.php/Step/Login/getUserStep
+ERR: 1146:Table 'shopxcx.wechat_wehchat_step_record' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wechat_wehchat_step_record`
+
