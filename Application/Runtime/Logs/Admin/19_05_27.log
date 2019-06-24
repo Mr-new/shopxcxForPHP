@@ -1,0 +1,27 @@
+[ 2019-05-27T14:10:40+08:00 ] 127.0.0.1 /index.php/Admin/ShopUser/getStepParticipantList
+ERR: 非法操作:getStepParticipantList
+
+[ 2019-05-27T14:36:20+08:00 ] 127.0.0.1 /index.php/Admin/ShopOrder/getOrderList?pageIndex=1&number=10
+ERR: 1052:Column 'tel' in where clause is ambiguous
+ [ SQL语句 ] : SELECT wechat_shop_user.nickName,wechat_shop_order.id,wechat_shop_order.ordernumber,wechat_shop_order.userid,wechat_shop_order.shopid,wechat_shop_order.specsid,wechat_shop_order.tel,wechat_shop_order.remarks,wechat_shop_order.sumprice,wechat_shop_order.number,wechat_shop_order.status,wechat_shop_order.datetime FROM `wechat_shop_order` INNER JOIN wechat_shop_user ON wechat_shop_order.userid = wechat_shop_user.id  WHERE `ordernumber` LIKE '%%' OR `tel` LIKE '%%' OR `nickName` LIKE '%%' ORDER BY wechat_shop_order.sort desc LIMIT 0,10  
+
+[ 2019-05-27T14:36:43+08:00 ] 127.0.0.1 /index.php/Admin/ShopOrder/getOrderList?pageIndex=1&number=10
+ERR: 1054:Unknown column 'wechat_shop_order.sort' in 'order clause'
+ [ SQL语句 ] : SELECT wechat_shop_user.nickName,wechat_shop_order.id,wechat_shop_order.ordernumber,wechat_shop_order.userid,wechat_shop_order.shopid,wechat_shop_order.specsid,wechat_shop_order.tel,wechat_shop_order.remarks,wechat_shop_order.sumprice,wechat_shop_order.number,wechat_shop_order.status,wechat_shop_order.datetime FROM `wechat_shop_order` INNER JOIN wechat_shop_user ON wechat_shop_order.userid = wechat_shop_user.id  WHERE `ordernumber` LIKE '%%' OR `nickName` LIKE '%%' ORDER BY wechat_shop_order.sort desc LIMIT 0,10  
+
+[ 2019-05-27T14:37:08+08:00 ] 127.0.0.1 /index.php/Admin/ShopOrder/getOrderList?pageIndex=1&number=10
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT wechat_shop_user.nickName,wechat_shop_order.id,wechat_shop_order.ordernumber,wechat_shop_order.userid,wechat_shop_order.shopid,wechat_shop_order.specsid,wechat_shop_order.tel,wechat_shop_order.remarks,wechat_shop_order.sumprice,wechat_shop_order.number,wechat_shop_order.status,wechat_shop_order.datetime FROM `wechat_shop_order` INNER JOIN wechat_shop_user ON wechat_shop_order.userid = wechat_shop_user.id  WHERE `ordernumber` LIKE '%%' OR `nickName` LIKE '%%' ORDER BY sort desc LIMIT 0,10  
+
+[ 2019-05-27T14:37:27+08:00 ] 127.0.0.1 /index.php/Admin/ShopOrder/getOrderList?pageIndex=1&number=10
+ERR: 1054:Unknown column 'wechat_shop_order.sort' in 'order clause'
+ [ SQL语句 ] : SELECT wechat_shop_user.nickName,wechat_shop_order.id,wechat_shop_order.ordernumber,wechat_shop_order.userid,wechat_shop_order.shopid,wechat_shop_order.specsid,wechat_shop_order.tel,wechat_shop_order.remarks,wechat_shop_order.sumprice,wechat_shop_order.number,wechat_shop_order.status,wechat_shop_order.datetime FROM `wechat_shop_order` INNER JOIN wechat_shop_user ON wechat_shop_order.userid = wechat_shop_user.id  WHERE `ordernumber` LIKE '%%' OR `nickName` LIKE '%%' ORDER BY wechat_shop_order.sort desc LIMIT 0,10  
+
+[ 2019-05-27T14:38:14+08:00 ] 127.0.0.1 /index.php/Admin/ShopOrder/getOrderList?pageIndex=1&number=10
+ERR: 1052:Column 'tel' in where clause is ambiguous
+ [ SQL语句 ] : SELECT wechat_shop_user.nickName,wechat_shop_order.id,wechat_shop_order.ordernumber,wechat_shop_order.userid,wechat_shop_order.shopid,wechat_shop_order.specsid,wechat_shop_order.tel,wechat_shop_order.remarks,wechat_shop_order.sumprice,wechat_shop_order.number,wechat_shop_order.status,wechat_shop_order.datetime FROM `wechat_shop_order` INNER JOIN wechat_shop_user ON wechat_shop_order.userid = wechat_shop_user.id  WHERE `ordernumber` LIKE '%%' OR `tel` LIKE '%%' OR `nickName` LIKE '%%' ORDER BY wechat_shop_order.datetime desc LIMIT 0,10  
+
+[ 2019-05-27T16:09:49+08:00 ] 127.0.0.1 /index.php/Admin/ShopOrder/getOrderList
+ERR: 1054:Unknown column 'wechat_shop_order.specsid' in 'field list'
+ [ SQL语句 ] : SELECT wechat_shop_user.nickName,wechat_shop_order.id,wechat_shop_order.ordernumber,wechat_shop_order.userid,wechat_shop_order.shopid,wechat_shop_order.specsid,wechat_shop_order.tel,wechat_shop_order.remarks,wechat_shop_order.sumprice,wechat_shop_order.number,wechat_shop_order.status,wechat_shop_order.datetime FROM `wechat_shop_order` INNER JOIN wechat_shop_user ON wechat_shop_order.userid = wechat_shop_user.id  WHERE `ordernumber` LIKE '%%' OR wechat_shop_order.tel LIKE '%%' OR `nickName` LIKE '%%' ORDER BY wechat_shop_order.datetime desc LIMIT 0,10  
+

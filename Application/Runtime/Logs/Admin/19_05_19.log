@@ -1,0 +1,28 @@
+[ 2019-05-19T15:17:26+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList
+ERR: 1146:Table 'shopxcx.wechat_banner' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wechat_banner`
+
+[ 2019-05-19T15:17:30+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList
+ERR: 1146:Table 'shopxcx.wechat_banner' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wechat_banner`
+
+[ 2019-05-19T15:17:47+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList
+ERR: 1146:Table 'shopxcx.wechat_banner' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wechat_banner`
+
+[ 2019-05-19T15:20:20+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList?pageIndex=1&number=10
+ERR: 1146:Table 'shopxcx.wechat_banner' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wechat_banner`
+
+[ 2019-05-19T15:21:31+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList
+ERR: 1054:Unknown column 'b_datetime' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `wechat_banner` ORDER BY b_datetime desc LIMIT 0,10  
+
+[ 2019-05-19T15:21:37+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList?pageIndex=1&number=10
+ERR: 1054:Unknown column 'b_datetime' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `wechat_banner` ORDER BY b_datetime desc LIMIT 0,10  
+
+[ 2019-05-19T16:13:06+08:00 ] 127.0.0.1 /index.php/Admin/Banner/deleteBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `wechat_images` WHERE ( id= ) LIMIT 1  
+

@@ -1,0 +1,15 @@
+[ 2019-05-21T15:22:52+08:00 ] 127.0.0.1 /index.php/Shop/ShopCommodity/getCommodityList?pageIndex=1&number=10
+ERR: 无法加载控制器:ShopCommodity
+
+[ 2019-05-21T15:23:24+08:00 ] 127.0.0.1 /index.php/Shop/ShopCommodity/getCommodityList?pageIndex=1&number=10
+ERR: 无法加载控制器:ShopCommodity
+
+[ 2019-05-21T15:23:33+08:00 ] 127.0.0.1 /index.php/Shop/ShopCommodity/getCommodityList?pageIndex=1&number=10
+ERR: 无法加载控制器:ShopCommodity
+
+[ 2019-05-21T15:24:06+08:00 ] 127.0.0.1 /index.php/Shop/ShopCommodity/getCommodityList?pageIndex=1&number=10
+ERR: 无法加载控制器:ShopCommodity
+
+[ 2019-05-21T15:24:24+08:00 ] 127.0.0.1 /index.php/Shop/ShopCommodity/getCommodityList?pageIndex=1&number=10
+ERR: 无法加载控制器:ShopCommodity
+

@@ -1,0 +1,15 @@
+[ 2019-05-22T17:56:15+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-22T17:59:12+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-22T18:00:51+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-22T18:01:58+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-22T18:11:13+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: Cannot use object of type stdClass as array
+

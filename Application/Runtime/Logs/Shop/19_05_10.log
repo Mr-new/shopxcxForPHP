@@ -1,0 +1,32 @@
+[ 2019-05-10T13:34:21+08:00 ] 127.0.0.1 /index.php/Shop/Login/doLogin
+ERR: Think\Controller:vget方法不存在！
+
+[ 2019-05-10T13:34:48+08:00 ] 127.0.0.1 /index.php/Shop/Login/doLogin
+ERR: Think\Controller:vget方法不存在！
+
+[ 2019-05-10T13:36:48+08:00 ] 127.0.0.1 /index.php/Shop/Login/doLogin?code=071R4R892zQCdL0trBa9218M892R4R87
+ERR: Think\Controller:vget方法不存在！
+
+[ 2019-05-10T14:07:23+08:00 ] 127.0.0.1 /index.php/Shop/Login/getUserInfo
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-10T14:22:52+08:00 ] 127.0.0.1 /index.php/Shop/Login/getUserInfo
+ERR: Function name must be a string
+
+[ 2019-05-10T14:23:27+08:00 ] 127.0.0.1 /index.php/Shop/Login/getUserInfo
+ERR: Function name must be a string
+
+[ 2019-05-10T14:23:37+08:00 ] 127.0.0.1 /index.php/Shop/Login/getUserInfo?code=011dGibw1MR24g0428ew1lVfbw1dGib8&iv=OnNFICYHtYfUz%2FtK8XhJ9A%3D%3D&encryptedData=KN8VvxHi4hit6LjQe8SPtGdxwrkK17xZ8SLMQqr%2FWDxWfLqEf%2BMzKylf1HHVs1UQES89Yjxq3QQzqkmTBUn0LiuDLTEv2VSLS7l%2B9xKSU46mSboK8rJfBGfVD%2FYalUGr3RMcYTRs%2FANrldyAblAEhjXBqL1FcT5DP3sdGcGld3ADQJlJTE4PAyovTYo5h%2BCcwLwnGaPzKLzzd0%2Bqnm%2FTDKV%2BLED3SkyKhNnlKFhb2oQMYQPkoJQ2gwh8h%2BdLTGvUcFDfj%2BZ5Yzr%2FkxStMLdesSSV0LuLdXSWEMn4RQSK6xw0LCt9aUeq7QVYQ2O7%2Bg%2FYTqcupXqC3J1IGYep2e9VIXg9Bf2eFAk%2FP9Q0C9kAE94js0zOa1%2FsAgH9Si7M6xtMc4Ebj87VM90rIRnkumI3lhIm46h7FrekAHKzfMldvPqqKiXK1LEkPDcuk0F85bdZJ1TI1nJlV4iyfK95hFke%2BufXt%2FDe1l%2Fn8XfUz7%2FS4hgye2FagpNMdKxDhDd9sPp49LtsTNSkGqCbC54m6kqlaw%3D%3D&userid=1
+ERR: Function name must be a string
+
+[ 2019-05-10T16:55:51+08:00 ] 127.0.0.1 /index.php/Shop/Order/getUserTel
+ERR: Think\Controller:vget方法不存在！
+
+[ 2019-05-10T18:02:18+08:00 ] 127.0.0.1 /index.php/Shop/Order/submitOrder
+ERR: 1366:Incorrect decimal value: '' for column 'sumprice' at row 1
+ [ SQL语句 ] : INSERT INTO `wechat_shop_order` (`ordernumber`,`userid`,`shopid`,`specsid`,`tel`,`remarks`,`sumprice`,`number`,`status`,`datetime`) VALUES ('20190510155748253863','0','0','0','110','12312312312','','0','1','2019-05-10 18:02:18')
+
+[ 2019-05-10T18:02:58+08:00 ] 127.0.0.1 /index.php/Shop/Order/submitOrder
+ERR: 1366:Incorrect decimal value: '' for column 'sumprice' at row 1
+ [ SQL语句 ] : INSERT INTO `wechat_shop_order` (`ordernumber`,`userid`,`shopid`,`specsid`,`tel`,`remarks`,`sumprice`,`number`,`status`,`datetime`) VALUES ('20190510155748257816','0','0','0','123','123','','0','1','2019-05-10 18:02:58')
+

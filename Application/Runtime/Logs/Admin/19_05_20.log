@@ -1,0 +1,20 @@
+[ 2019-05-20T14:09:05+08:00 ] 127.0.0.1 /index.php/Admin/ShopBanner/deleteBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgid` FROM `wechat_shop_banner` WHERE ( id= ) LIMIT 1  
+
+[ 2019-05-20T14:10:17+08:00 ] 127.0.0.1 /index.php/Admin/ShopBanner/deleteBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgid` FROM `wechat_shop_banner` WHERE ( id= ) LIMIT 1  
+
+[ 2019-05-20T14:10:58+08:00 ] 127.0.0.1 /index.php/Admin/ShopBanner/deleteBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgid` FROM `wechat_shop_banner` WHERE ( id= ) LIMIT 1  
+
+[ 2019-05-20T15:21:44+08:00 ] 127.0.0.1 /index.php/Admin/ShopHomeMenu/deleteHomeMenu
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `wechat_images` WHERE ( id= ) LIMIT 1  
+
+[ 2019-05-20T16:00:15+08:00 ] 127.0.0.1 /index.php/Admin/ShopHomeMenu/deleteHomeMenu
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `wechat_images` WHERE ( id= ) LIMIT 1  
+

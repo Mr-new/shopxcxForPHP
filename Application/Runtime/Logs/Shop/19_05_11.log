@@ -1,0 +1,22 @@
+[ 2019-05-11T13:17:40+08:00 ] 127.0.0.1 /index.php/Shop/Order/getOrderMsg
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail` FROM `wechat_shop_commodity` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-05-11T13:27:17+08:00 ] 127.0.0.1 /index.php/Shop/Order/getOrderMsg
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail` FROM `wechat_shop_commodity` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-05-11T15:35:10+08:00 ] 127.0.0.1 /index.php/Shop/Pay/pay
+ERR: Too few arguments to function Shop\Controller\PayController::order_number(), 0 passed in D:\code\shopxcx\Application\Shop\Controller\PayController.class.php on line 17 and exactly 1 expected
+
+[ 2019-05-11T16:10:45+08:00 ] 127.0.0.1 /index.php/Shop/Pay/pay
+ERR: Think\Controller:formatBizQueryParaMap方法不存在！
+
+[ 2019-05-11T17:57:09+08:00 ] 127.0.0.1 /index.php/Shop/Index/getHotCommodityList
+ERR: 1054:Unknown column 'currentprice' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`thumbnail`,`currentprice` FROM `wechat_shop_commodity` WHERE `hot` = 1 ORDER BY sort desc 
+
+[ 2019-05-11T17:57:39+08:00 ] 127.0.0.1 /index.php/Shop/Commodity/getCommodityList
+ERR: 1054:Unknown column 'currentprice' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`title`,`thumbnail`,`currentprice`,`beforeprice` FROM `wechat_shop_commodity` WHERE `name` LIKE '%%' AND `isup` = 1 ORDER BY sort desc LIMIT 0,5  
+

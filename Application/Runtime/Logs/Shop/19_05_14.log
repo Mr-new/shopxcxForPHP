@@ -1,0 +1,29 @@
+[ 2019-05-14T15:40:46+08:00 ] 127.0.0.1 /index.php/Shop/Commodity/getCommodityDetailsList
+ERR: 1054:Unknown column '$1' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_commodity_collection` WHERE ( shopid=$1 ) LIMIT 1  
+
+[ 2019-05-14T16:10:16+08:00 ] 127.0.0.1 /index.php/Shop/Order/getOrderMsg
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail` FROM `wechat_shop_commodity` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-05-14T16:28:05+08:00 ] 127.0.0.1 /index.php/Shop/Order/getOrderMsg
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail` FROM `wechat_shop_commodity` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-05-14T16:31:43+08:00 ] 127.0.0.1 /index.php/Shop/Order/getOrderMsg
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail` FROM `wechat_shop_commodity` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-05-14T16:32:44+08:00 ] 127.0.0.1 /index.php/Shop/Order/getOrderMsg
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail` FROM `wechat_shop_commodity` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-05-14T16:42:14+08:00 ] 127.0.0.1 /index.php/Shop/Order/getOrderMsg
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-14T16:43:09+08:00 ] 127.0.0.1 /index.php/Shop/Order/getOrderMsg
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-14T16:45:37+08:00 ] 127.0.0.1 /index.php/Shop/Order/getOrderMsg
+ERR: Cannot use object of type stdClass as array
+

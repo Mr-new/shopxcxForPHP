@@ -1,0 +1,18 @@
+[ 2019-05-16T10:55:57+08:00 ] 127.0.0.1 /index.php/Shop/Pay/t
+ERR: 测试日志信息
+
+[ 2019-05-16T13:50:39+08:00 ] 127.0.0.1 /index.php/Shop/Collection/getCaseCollectionList
+ERR: 1054:Unknown column 'wechat_shop_case_collection.headerimg' in 'field list'
+ [ SQL语句 ] : SELECT wechat_shop_case_collection.id,wechat_shop_case_collection.headerimg,wechat_shop_case_collection.name,wechat_shop_case_collection.imglist,wechat_shop_case_collection.address,wechat_shop_case_collection.casemenuid,wechat_shop_case_collection.looknumber,wechat_shop_case_collection.fabulousnumber,wechat_shop_case_collection.datetime FROM `wechat_shop_case_collection` INNER JOIN wechat_shop_case ON wechat_shop_case_collection.caseid = wechat_shop_case.id  WHERE `userid` = '' ORDER BY wechat_shop_case_collection.datetime desc LIMIT 0,20  
+
+[ 2019-05-16T13:51:09+08:00 ] 127.0.0.1 /index.php/Shop/Collection/getCaseCollectionList
+ERR: 1054:Unknown column 'wechat_shop_case_collection.headerimg' in 'field list'
+ [ SQL语句 ] : SELECT wechat_shop_case_collection.id,wechat_shop_case_collection.headerimg,wechat_shop_case_collection.name,wechat_shop_case_collection.imglist,wechat_shop_case_collection.address,wechat_shop_case_collection.casemenuid,wechat_shop_case_collection.looknumber,wechat_shop_case_collection.fabulousnumber,wechat_shop_case_collection.datetime FROM `wechat_shop_case_collection` INNER JOIN wechat_shop_case ON wechat_shop_case_collection.caseid = wechat_shop_case.id  WHERE `userid` = '' ORDER BY wechat_shop_case_collection.datetime desc LIMIT 0,20  
+
+[ 2019-05-16T13:51:47+08:00 ] 127.0.0.1 /index.php/Shop/Collection/getCaseCollectionList?userid=3&pageIndex=1&number=10
+ERR: 1054:Unknown column 'wechat_shop_case_collection.headerimg' in 'field list'
+ [ SQL语句 ] : SELECT wechat_shop_case_collection.id,wechat_shop_case_collection.headerimg,wechat_shop_case_collection.name,wechat_shop_case_collection.imglist,wechat_shop_case_collection.address,wechat_shop_case_collection.casemenuid,wechat_shop_case_collection.looknumber,wechat_shop_case_collection.fabulousnumber,wechat_shop_case_collection.datetime FROM `wechat_shop_case_collection` INNER JOIN wechat_shop_case ON wechat_shop_case_collection.caseid = wechat_shop_case.id  WHERE `userid` = '3' ORDER BY wechat_shop_case_collection.datetime desc LIMIT 0,10  
+
+[ 2019-05-16T14:59:26+08:00 ] 127.0.0.1 /index.php/Shop/Collection/getShopCollectionList
+ERR: syntax error, unexpected '}'
+

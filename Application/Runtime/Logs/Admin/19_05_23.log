@@ -1,0 +1,22 @@
+[ 2019-05-23T09:22:52+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-23T09:26:49+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-23T09:30:10+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-23T09:31:38+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-23T09:34:31+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-05-23T14:35:56+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/deleteCommodity
+ERR: 1054:Unknown column 'img' in 'field list'
+ [ SQL语句 ] : SELECT `img` FROM `wechat_shop_commodity` WHERE ( id=30 ) LIMIT 1  
+
+[ 2019-05-23T16:22:52+08:00 ] 127.0.0.1 /index.php/Admin/ShopConfig/getCommodityList
+ERR: 非法操作:getCommodityList
+

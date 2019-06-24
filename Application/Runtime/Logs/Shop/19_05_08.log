@@ -1,0 +1,54 @@
+[ 2019-05-08T15:12:49+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseMenuList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:12:49+08:00 ] 127.0.0.1 /index.php/Shop/Index/getHotCommodityList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:12:49+08:00 ] 127.0.0.1 /index.php/Shop/Banner/getBannerList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:14:03+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseMenuList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:14:03+08:00 ] 127.0.0.1 /index.php/Shop/Index/getHotCommodityList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:15:18+08:00 ] 127.0.0.1 /index.php/Shop/Index/getHotCommodityList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:15:18+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseMenuList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:15:18+08:00 ] 127.0.0.1 /index.php/Shop/Banner/getBannerList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:15:44+08:00 ] 127.0.0.1 /index.php/Shop/Banner/getBannerList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:15:44+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseMenuList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+)
+
+[ 2019-05-08T15:15:55+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseMenuList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:15:55+08:00 ] 127.0.0.1 /index.php/Shop/Index/getHotCommodityList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:16:19+08:00 ] 127.0.0.1 /index.php/Shop/Banner/getBannerList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:16:19+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseMenuList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T15:16:19+08:00 ] 127.0.0.1 /index.php/Shop/Index/getHotCommodityList
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2019-05-08T16:19:18+08:00 ] 127.0.0.1 /index.php/Shop/Shop/getCommodityDetailsList
+ERR: 无法加载控制器:Shop
+
+[ 2019-05-08T16:50:43+08:00 ] 127.0.0.1 /index.php/Shop/Commodity/getCommodityDetailsList
+ERR: 1054:Unknown column 'name' in 'field list'
+ [ SQL语句 ] : SELECT `name`,`title` FROM `wechat_shop_commodity_specs` WHERE ( cid=1 ) 
+

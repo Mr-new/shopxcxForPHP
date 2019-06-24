@@ -1,0 +1,4 @@
+[ 2019-05-24T15:54:27+08:00 ] 127.0.0.1 /index.php/Shop/Banner/getBannerList
+ERR: 1054:Unknown column 'url' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`imgid`,`url` FROM `wechat_shop_banner` ORDER BY sort desc 
+
