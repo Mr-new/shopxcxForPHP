@@ -1,0 +1,4 @@
+[ 2019-07-29T14:04:47+08:00 ] 127.0.0.1 /index.php/Shop/Coupon/getMyCouponList?userid=3&status=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'int)wechat_shop_coupon.full,(int)wechat_shop_coupon.reduce,wechat_shop_coupon.re' at line 1
+ [ SQL语句 ] : SELECT wechat_shop_coupon_record.id,wechat_shop_coupon_record.status,wechat_shop_coupon_record.datetime,wechat_shop_coupon.title,(int)wechat_shop_coupon.full,(int)wechat_shop_coupon.reduce,wechat_shop_coupon.reduce,wechat_shop_coupon.startdate,wechat_shop_coupon.enddate FROM `wechat_shop_coupon_record` INNER JOIN wechat_shop_coupon ON wechat_shop_coupon_record.couponid = wechat_shop_coupon.id  WHERE wechat_shop_coupon_record.userid = '3' AND wechat_shop_coupon_record.status = '1' AND wechat_shop_coupon.startdate <= '2019-07-29' AND wechat_shop_coupon.enddate >= '2019-07-29' 
+

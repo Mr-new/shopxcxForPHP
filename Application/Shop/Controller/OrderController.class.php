@@ -10,6 +10,7 @@ class OrderController extends Controller {
     //获取提交订单信息
     public function getOrderMsg(){
         $orderArr=json_decode($_POST['orderArr']);
+        $couponid=I('couponid');
         $shopTable=M('shop_commodity');
         $specsTable=M('shop_commodity_specs');
         $shopDetails=array();
@@ -27,6 +28,13 @@ class OrderController extends Controller {
             $images=A('Common/Images');
             //拼接图片路径
             $shopDetails['shopList']=$images->getImagesList($shopDetails['shopList'],'thumbnail', 'thumbnailimg');
+            //couponid不为0说明用户选择了优惠券
+            if($couponid!=0){
+                $Table=M("shop_coupon_record");
+                $shopDetails['coupon']=$Table->join("wechat_shop_coupon ON wechat_shop_coupon_record.couponid = wechat_shop_coupon.id")->where("wechat_shop_coupon_record.id=$couponid")->field("wechat_shop_coupon_record.id, wechat_shop_coupon_record.status, wechat_shop_coupon_record.datetime, wechat_shop_coupon.title, wechat_shop_coupon.full, wechat_shop_coupon.reduce, wechat_shop_coupon.reduce, wechat_shop_coupon.startdate, wechat_shop_coupon.enddate")->find();
+                //计算使用优惠券后的价格
+                $sumPrice-=$shopDetails['coupon']['reduce'];
+            }
             $shopDetails['sumPrice']=number_format($sumPrice,2, '.', '');
             $result=array(
                 'success'=>true,
@@ -101,17 +109,29 @@ class OrderController extends Controller {
         $data['specsprice']=$priceStr;
         $data['tel']=I('tel');
         $data['remarks']=I("remarks");
-        $data['sumprice']=I("sumprice");
         $data['number']=$this->arr_to_str($orderArr,'number');
+        //总金额
+        $data['sumprice']=I("sumprice");
+        //实际支付金额
+        $data['payprice']=I("payprice");
+        //优惠减免金额
+        $data['reduceprice']=I("reduceprice");
+        //优惠券记录id
+        $data['couponid']=I("couponid");
         $data['status']=1;
         $data['datetime']=date('Y-m-d H:i:s',time());
         $add=$orderTable->add($data);
         if($add){
+            //修改优惠券状态为已使用
+            $Table=M('shop_coupon_record');
+            $savaData['status']=2;
+            $Table->where("id='{$data['couponid']}'")->save($savaData);
+            //获取支付相关信息
             $userTable=M("shop_user");
             $openid=$userTable->where("id='{$data['userid']}'")->getField("openid");  //用户openid
             $shopName=M('shop_commodity')->where("id='{$orderArr[0]->shopId}'")->getField("name");//商品名称
             $orderNumber=$data['ordernumber'];  //订单编号
-            $sumPrice=$data['sumprice'];  //总支付金额
+            $sumPrice=$data['payprice'];  //实际支付金额
             //发起支付
             $Pay=A('Pay');
             $payResult=$Pay->pay($openid, $shopName, $orderNumber, $sumPrice);
@@ -281,13 +301,13 @@ class OrderController extends Controller {
     public function payOrder(){
         $orderId=I("id");
         $orderTable=M('shop_order');
-        $orderDetails=$orderTable->where("id=$orderId")->field("shopid,ordernumber,sumprice,userid")->find();
+        $orderDetails=$orderTable->where("id=$orderId")->field("shopid,ordernumber,payprice,userid")->find();
         $orderArr=explode(",", $orderDetails['shopid']);
         $userTable=M("shop_user");
         $openid=$userTable->where("id='{$orderDetails['userid']}'")->getField("openid");
         $shopName=M('shop_commodity')->where("id='{$orderArr[0]}'")->getField("name");  //商品名称
         $orderNumber=$orderDetails['ordernumber'];  //订单编号
-        $sumPrice=$orderDetails['sumprice'];  //总支付金额
+        $sumPrice=$orderDetails['payprice'];  //总支付金额
         //发起支付
         $Pay=A('Pay');
         $payResult=$Pay->pay($openid, $shopName, $orderNumber, $sumPrice);

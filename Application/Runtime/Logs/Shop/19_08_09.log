@@ -1,0 +1,4 @@
+[ 2019-08-09T09:36:39+08:00 ] 127.0.0.1 /index.php/Shop/Doctor/getDoctorList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_doctor_praise` WHERE ( doctor_id='1428' and userid= ) LIMIT 1  
+

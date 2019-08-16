@@ -1,0 +1,6 @@
+[ 2019-07-17T09:55:03+08:00 ] 127.0.0.1 /index.php/Admin/Login/Login
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2019-07-17T09:55:17+08:00 ] 127.0.0.1 /index.php/Admin/Login/Login
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+

@@ -153,15 +153,17 @@ class ShopCaseController extends BaseController {
         $Table=M('shop_case');
         $images=M('images');
         if(!empty($imgId)){
-            $imgStr=$Table->where("id=$id")->getField("imglist");
-            $imgArr=explode(",", $imgStr);
-            foreach ($imgArr as $k=>$v){
-                if($imgId==$v){
-                    unset($imgArr[$k]);
+            if(!empty($id)){
+                $imgStr=$Table->where("id=$id")->getField("imglist");
+                $imgArr=explode(",", $imgStr);
+                foreach ($imgArr as $k=>$v){
+                    if($imgId==$v){
+                        unset($imgArr[$k]);
+                    }
                 }
+                $saveData['imglist']=implode(",", $imgArr);
+                $Table->where("id=$id")->save($saveData);
             }
-            $saveData['imglist']=implode(",", $imgArr);
-            $Table->where("id=$id")->save($saveData);
             $imgName=$images->where("id=$imgId")->getField('image');
             if($imgName){
                 unlink('./Public/uploadImages/'.$imgName);  //删除图片文件

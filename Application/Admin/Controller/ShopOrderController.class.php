@@ -19,7 +19,7 @@ class ShopOrderController extends BaseController {
             $map['sumprice']=array('like',"%$select_word%");
             $map['_logic']='OR';
         }
-        $list=$Table->join("wechat_shop_user ON wechat_shop_order.userid = wechat_shop_user.id")->where($map)->field("wechat_shop_user.nickName,wechat_shop_order.id,wechat_shop_order.ordernumber,wechat_shop_order.userid,wechat_shop_order.shopid,wechat_shop_order.specstitle,wechat_shop_order.specsprice,wechat_shop_order.tel,wechat_shop_order.remarks,wechat_shop_order.sumprice,wechat_shop_order.number,wechat_shop_order.status,wechat_shop_order.datetime")->order('wechat_shop_order.datetime desc')->page($pageIndex.",$number")->select();
+        $list=$Table->join("wechat_shop_user ON wechat_shop_order.userid = wechat_shop_user.id")->where($map)->field("wechat_shop_user.nickName,wechat_shop_order.id,wechat_shop_order.ordernumber,wechat_shop_order.userid,wechat_shop_order.shopid,wechat_shop_order.specstitle,wechat_shop_order.specsprice,wechat_shop_order.tel,wechat_shop_order.remarks,wechat_shop_order.sumprice, wechat_shop_order.reduceprice, wechat_shop_order.payprice, wechat_shop_order.number,wechat_shop_order.status,wechat_shop_order.datetime")->order('wechat_shop_order.datetime desc')->page($pageIndex.",$number")->select();
         $count=$Table->join("wechat_shop_user ON wechat_shop_order.userid = wechat_shop_user.id")->where($map)->count();// 查询满足要求的总记录数
         $sumPage=ceil($count/$number);  //总页数=总条数/每页显示的条数
         if($list){
@@ -81,19 +81,23 @@ class ShopOrderController extends BaseController {
     public function saveOrderStatus(){
         $Table=M('shop_order');
         $id=I('id');  //主键id
-        $data['status']=5;
-        $save=$Table->where("id=$id")->save($data);
-        if($save){
+        $find=$Table->where("id=$id")->field("ordernumber,payprice")->find();
+        $refund=A('Refund');
+        //发起退款操作
+        $re=$refund->wxRefundApi($find['ordernumber'],$find['payprice']);
+        if($re['num']==1){
+            $data['status']=5;
+            $Table->where("id=$id")->save($data);
             $result=array(
                 'success'=>true,
-                'msg'=>'修改成功',
-                'data' => $save
+                'msg'=>'退款成功',
+                'data' => ''
             );
         }else{
             $result=array(
-                'success'=>true,
-                'msg'=>'修改订单状态失败',
-                'data' => ''
+                'success'=>false,
+                'msg'=>'退款失败',
+                'data' => $re
             );
         }
         $this->ajaxReturn($result);

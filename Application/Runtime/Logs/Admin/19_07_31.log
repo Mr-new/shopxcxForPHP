@@ -1,0 +1,14 @@
+[ 2019-07-31T14:12:33+08:00 ] 127.0.0.1 /index.php/Admin/ShopOnline/getCouponList
+ERR: 非法操作:getCouponList
+
+[ 2019-07-31T14:12:37+08:00 ] 127.0.0.1 /index.php/Admin/ShopOnline/getCouponList
+ERR: 非法操作:getCouponList
+
+[ 2019-07-31T14:28:50+08:00 ] 127.0.0.1 /index.php/Admin/ShopCoupon/getCouponList?pageIndex=1&number=10
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id`,`title` FROM `wechat_shop_commodity` WHERE ( id= ) LIMIT 1  
+
+[ 2019-07-31T15:28:03+08:00 ] 127.0.0.1 /index.php/Admin/ShopCoupon/saveCoupon
+ERR: 1292:Incorrect date value: '2019-07-21T16:00:00.000Z' for column 'startdate' at row 1
+ [ SQL语句 ] : UPDATE `wechat_shop_coupon` SET `title`='满100减10',`goodsid`='1,2,3,15,33',`full`='100.00',`reduce`='10.00',`number`='98',`startdate`='2019-07-21T16:00:00.000Z',`enddate`='2019-07-31T16:00:00.000Z',`isup`='1',`sort`='0' WHERE ( id=1 )
+

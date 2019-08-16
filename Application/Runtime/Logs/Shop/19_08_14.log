@@ -1,0 +1,8 @@
+[ 2019-08-14T08:56:59+08:00 ] 127.0.0.1 /index.php/Shop/Login/doLogin
+ERR: 1366:Incorrect string value: '\xF0\x9F\x98\x80' for column 'nickName' at row 1
+ [ SQL语句 ] : UPDATE `wechat_shop_user` SET `nickName`='Black😀',`language`='zh_CN',`gender`='1',`city`='临沂',`province`='山东',`country`='中国',`avatarUrl`='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL6yITGID1l3rhibibEiaMNdpPIHaBePwQWDsMxowbd4SmfyhSic34gicFgrRIB2SPl1c17kJicibibTI3rgg/132',`openid`='oYlJJ5Fs8VzKYE3xOKvKn-IuuMLM',`unionid`='oESiO5se9WzT7mo90SZMZWCZUGdw' WHERE ( openid='oYlJJ5Fs8VzKYE3xOKvKn-IuuMLM' )
+
+[ 2019-08-14T09:01:34+08:00 ] 127.0.0.1 /index.php/Shop/Login/doLogin
+ERR: 1366:Incorrect string value: '\xF0\x9F\x98\x80' for column 'nickName' at row 1
+ [ SQL语句 ] : UPDATE `wechat_shop_user` SET `nickName`='Black😀',`language`='zh_CN',`gender`='1',`city`='临沂',`province`='山东',`country`='中国',`avatarUrl`='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL6yITGID1l3rhibibEiaMNdpPIHaBePwQWDsMxowbd4SmfyhSic34gicFgrRIB2SPl1c17kJicibibTI3rgg/132',`openid`='oYlJJ5Fs8VzKYE3xOKvKn-IuuMLM',`unionid`='oESiO5se9WzT7mo90SZMZWCZUGdw' WHERE ( openid='oYlJJ5Fs8VzKYE3xOKvKn-IuuMLM' )
+

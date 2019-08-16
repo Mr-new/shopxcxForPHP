@@ -1,0 +1,8 @@
+[ 2019-07-17T14:20:09+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getUserIntegral
+ERR: 1054:Unknown column 'userid' in 'where clause'
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( userid=3 ) LIMIT 1  
+
+[ 2019-07-17T15:42:16+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getIntegralOrderDetails
+ERR: 1054:Unknown column 'name' in 'field list'
+ [ SQL语句 ] : SELECT `name`,`pic` FROM `wechat_shop_integral_goods` WHERE ( id='' ) LIMIT 1  
+

@@ -30,34 +30,45 @@ class LoginController extends Controller {
         $tempArr['unionid']=$data->unionId;
         $tempArr['integral']=0;
         $tempArr['datetime']=date('Y-m-d H:i:s',time());
-        $isUser=$userTable->where("openid='{$tempArr['openid']}'")->find();
-        if($isUser){
-            S($isUser['id'], $session_key);  //记录redis缓存
-            $result=array(
-                'success'=>true,
-                'msg'=>'请求成功',
-                'data' => array(
-                    'userId' => $isUser['id'],
-                )
-            );
-        }else{
-            $add=$userTable->add($tempArr);
-            if($add){
-                S($add, $session_key);  //记录redis缓存
+        if($tempArr['openid']){
+            $isUser=$userTable->where("openid='{$tempArr['openid']}'")->find();
+            if($isUser){
+                unset($tempArr['integral']);
+                unset($tempArr['datetime']);
+                $userTable->where("openid='{$tempArr['openid']}'")->save($tempArr);
+                S($isUser['id'], $session_key);  //记录redis缓存
                 $result=array(
                     'success'=>true,
                     'msg'=>'请求成功',
                     'data' => array(
-                        'userId' => $add,
+                        'userId' => $isUser['id'],
                     )
                 );
             }else{
-                $result=array(
-                    'success'=>false,
-                    'msg'=>'请求失败',
-                    'data' => '用户添加失败'
-                );
+                $add=$userTable->add($tempArr);
+                if($add){
+                    S($add, $session_key);  //记录redis缓存
+                    $result=array(
+                        'success'=>true,
+                        'msg'=>'请求成功',
+                        'data' => array(
+                            'userId' => $add,
+                        )
+                    );
+                }else{
+                    $result=array(
+                        'success'=>false,
+                        'msg'=>'授权失败，请重试!',
+                        'data' => ''
+                    );
+                }
             }
+        }else{
+            $result=array(
+                'success'=>false,
+                'msg'=>'授权失败，请重试!',
+                'data' => ''
+            );
         }
         $this->ajaxReturn($result);
     }

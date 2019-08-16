@@ -1,0 +1,16 @@
+[ 2019-07-30T15:41:31+08:00 ] 127.0.0.1 /index.php/Shop/Order/getOrderMsg
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT wechat_shop_coupon_record.id,wechat_shop_coupon_record.status,wechat_shop_coupon_record.datetime,wechat_shop_coupon.title,wechat_shop_coupon.full,wechat_shop_coupon.reduce,wechat_shop_coupon.reduce,wechat_shop_coupon.startdate,wechat_shop_coupon.enddate FROM `wechat_shop_coupon_record` INNER JOIN wechat_shop_coupon ON wechat_shop_coupon_record.couponid = wechat_shop_coupon.id  WHERE ( id=6 ) LIMIT 1  
+
+[ 2019-07-30T15:54:30+08:00 ] 127.0.0.1 /index.php/Shop/Coupon/getIsUseCouponList
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-07-30T15:55:00+08:00 ] 127.0.0.1 /index.php/Shop/Coupon/getIsUseCouponList
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-07-30T16:00:21+08:00 ] 127.0.0.1 /index.php/Shop/Coupon/getIsUseCouponList
+ERR: Cannot use object of type stdClass as array
+
+[ 2019-07-30T16:01:16+08:00 ] 127.0.0.1 /index.php/Shop/Coupon/getIsUseCouponList
+ERR: Cannot use object of type stdClass as array
+

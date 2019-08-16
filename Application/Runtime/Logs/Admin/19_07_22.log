@@ -1,0 +1,27 @@
+[ 2019-07-22T13:59:03+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/delImage
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `swiperimg` FROM `wechat_shop_commodity` WHERE ( id= ) LIMIT 1  
+
+[ 2019-07-22T14:01:35+08:00 ] 127.0.0.1 /index.php/Admin/ShopIntegralGoods/delImage
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imglist` FROM `wechat_shop_integral_goods` WHERE ( id= ) LIMIT 1  
+
+[ 2019-07-22T14:51:18+08:00 ] 127.0.0.1 /index.php/Admin/ShopIntegralOrder/getOrderList
+ERR: 1054:Unknown column 'wechat_shop_integral_order.number' in 'field list'
+ [ SQL语句 ] : SELECT wechat_shop_user.nickName,wechat_shop_integral_order.id,wechat_shop_integral_order.ordernumber,wechat_shop_integral_order.userid,wechat_shop_integral_order.integralgoodsid,wechat_shop_integral_order.tel,wechat_shop_integral_order.remarks,wechat_shop_integral_order.sumintegral,wechat_shop_integral_order.number,wechat_shop_integral_order.datetime FROM `wechat_shop_integral_order` INNER JOIN wechat_shop_user ON wechat_shop_integral_order.userid = wechat_shop_user.id  WHERE `ordernumber` LIKE '%%' OR wechat_shop_integral_order.tel LIKE '%%' OR `nickName` LIKE '%%' OR `sumintegral` LIKE '%%' ORDER BY wechat_shop_integral_order.datetime desc LIMIT 0,10  
+
+[ 2019-07-22T14:51:22+08:00 ] 127.0.0.1 /index.php/Admin/ShopIntegralOrder/getOrderList
+ERR: 1054:Unknown column 'wechat_shop_integral_order.number' in 'field list'
+ [ SQL语句 ] : SELECT wechat_shop_user.nickName,wechat_shop_integral_order.id,wechat_shop_integral_order.ordernumber,wechat_shop_integral_order.userid,wechat_shop_integral_order.integralgoodsid,wechat_shop_integral_order.tel,wechat_shop_integral_order.remarks,wechat_shop_integral_order.sumintegral,wechat_shop_integral_order.number,wechat_shop_integral_order.datetime FROM `wechat_shop_integral_order` INNER JOIN wechat_shop_user ON wechat_shop_integral_order.userid = wechat_shop_user.id  WHERE `ordernumber` LIKE '%%' OR wechat_shop_integral_order.tel LIKE '%%' OR `nickName` LIKE '%%' OR `sumintegral` LIKE '%%' ORDER BY wechat_shop_integral_order.datetime desc LIMIT 0,10  
+
+[ 2019-07-22T14:51:45+08:00 ] 127.0.0.1 /index.php/Admin/ShopIntegralOrder/getOrderList
+ERR: 1054:Unknown column 'wechat_shop_integral_order.number' in 'field list'
+ [ SQL语句 ] : SELECT wechat_shop_user.nickName,wechat_shop_integral_order.id,wechat_shop_integral_order.ordernumber,wechat_shop_integral_order.userid,wechat_shop_integral_order.integralgoodsid,wechat_shop_integral_order.tel,wechat_shop_integral_order.remarks,wechat_shop_integral_order.sumintegral,wechat_shop_integral_order.number,wechat_shop_integral_order.datetime FROM `wechat_shop_integral_order` INNER JOIN wechat_shop_user ON wechat_shop_integral_order.userid = wechat_shop_user.id  WHERE `ordernumber` LIKE '%%' OR wechat_shop_integral_order.tel LIKE '%%' OR `nickName` LIKE '%%' OR `sumintegral` LIKE '%%' ORDER BY wechat_shop_integral_order.datetime desc LIMIT 0,10  
+
+[ 2019-07-22T14:51:47+08:00 ] 127.0.0.1 /index.php/Admin/ShopIntegralOrder/getOrderList
+ERR: 1054:Unknown column 'wechat_shop_integral_order.number' in 'field list'
+ [ SQL语句 ] : SELECT wechat_shop_user.nickName,wechat_shop_integral_order.id,wechat_shop_integral_order.ordernumber,wechat_shop_integral_order.userid,wechat_shop_integral_order.integralgoodsid,wechat_shop_integral_order.tel,wechat_shop_integral_order.remarks,wechat_shop_integral_order.sumintegral,wechat_shop_integral_order.number,wechat_shop_integral_order.datetime FROM `wechat_shop_integral_order` INNER JOIN wechat_shop_user ON wechat_shop_integral_order.userid = wechat_shop_user.id  WHERE `ordernumber` LIKE '%%' OR wechat_shop_integral_order.tel LIKE '%%' OR `nickName` LIKE '%%' OR `sumintegral` LIKE '%%' ORDER BY wechat_shop_integral_order.datetime desc LIMIT 0,10  
+
+[ 2019-07-22T15:42:34+08:00 ] 127.0.0.1 /index.php/Admin/ShopOnline/getOrderList
+ERR: 非法操作:getOrderList
+

@@ -87,7 +87,7 @@ class ImagesController extends Controller {
             $image = new \Think\Image();
             $image->open("./Public/uploadImages/{$data['image']}");
             // 按照原图的比例生成一个最大为150*150的缩略图并保存为thumb.jpg
-            $image->thumb(1920, 1920)->save("./Public/uploadImages/{$data['image']}");//直接把缩略图覆盖原图
+            $image->thumb(5000, 5000)->save("./Public/uploadImages/{$data['image']}");//直接把缩略图覆盖原图
             $url=C('imgurl');
             $imgUrl=$url.$data['image'];
             $result=array(

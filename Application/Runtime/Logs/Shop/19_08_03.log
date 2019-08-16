@@ -1,0 +1,12 @@
+[ 2019-08-03T09:10:44+08:00 ] 127.0.0.1 /index.php/Shop/Banner/getBannerDetails
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`title`,`details` FROM `wechat_shop_banner` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-08-03T09:11:45+08:00 ] 127.0.0.1 /index.php/Shop/Banner/getBannerDetails
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`title`,`details` FROM `wechat_shop_banner` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-08-03T09:11:58+08:00 ] 127.0.0.1 /index.php/Shop/Banner/getBannerDetails
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`title`,`details` FROM `wechat_shop_banner` WHERE ( id=undefined ) LIMIT 1  
+
