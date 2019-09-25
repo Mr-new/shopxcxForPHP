@@ -1,0 +1,16 @@
+[ 2019-09-05T17:27:10+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: 1366:Incorrect decimal value: '' for column 'seckillprice' at row 1
+ [ SQL语句 ] : UPDATE `wechat_shop_commodity` SET `name`='胸部整形测试商品',`title`='副标题',`thumbnail`='108',`swiperimg`='',`beforeprice`='1999.00',`salenumber`='998',`categoryid`='18',`isup`='1',`hot`='0',`isseckill`='0',`seckillprice`='',`startdatetime`='',`enddatetime`='',`isrecomd`='1',`details`='',`sort`='0' WHERE ( id=6 )
+
+[ 2019-09-05T17:27:55+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: 1366:Incorrect decimal value: '' for column 'seckillprice' at row 1
+ [ SQL语句 ] : UPDATE `wechat_shop_commodity` SET `name`='私密测试商品',`title`='副标题',`thumbnail`='111',`swiperimg`='',`beforeprice`='1999.00',`salenumber`='998',`categoryid`='18',`isup`='1',`hot`='0',`isseckill`='0',`seckillprice`='',`startdatetime`='',`enddatetime`='',`isrecomd`='1',`details`='',`sort`='0' WHERE ( id=9 )
+
+[ 2019-09-05T17:28:37+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: 1366:Incorrect decimal value: '' for column 'seckillprice' at row 1
+ [ SQL语句 ] : UPDATE `wechat_shop_commodity` SET `name`='私密测试商品',`title`='副标题',`thumbnail`='111',`swiperimg`='',`beforeprice`='1999.00',`salenumber`='998',`categoryid`='18',`isup`='1',`hot`='0',`isseckill`='0',`seckillprice`='',`startdatetime`='',`enddatetime`='',`isrecomd`='1',`details`='',`sort`='0' WHERE ( id=9 )
+
+[ 2019-09-05T17:30:48+08:00 ] 127.0.0.1 /index.php/Admin/ShopCommodity/saveCommodity
+ERR: 1366:Incorrect decimal value: '' for column 'seckillprice' at row 1
+ [ SQL语句 ] : UPDATE `wechat_shop_commodity` SET `name`='私密测试商品',`title`='副标题',`thumbnail`='111',`swiperimg`='',`beforeprice`='1999.00',`salenumber`='998',`categoryid`='18',`isup`='1',`hot`='0',`isseckill`='0',`seckillprice`='',`isrecomd`='1',`details`='',`sort`='0' WHERE ( id=9 )
+

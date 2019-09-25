@@ -1,0 +1,24 @@
+[ 2019-08-21T14:39:41+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseDetails
+ERR: 1054:Unknown column 'headerimg' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`headerimg`,`imglist`,`name`,`looknumber`,`fabulousnumber`,`remarks`,`details`,`datetime` FROM `wechat_shop_case` WHERE `id` = 5 LIMIT 1  
+
+[ 2019-08-21T15:00:57+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseList
+ERR: 1054:Unknown column 'wechat_shop_case.headerimg' in 'field list'
+ [ SQL语句 ] : SELECT wechat_shop_case.id,wechat_shop_case.name,wechat_shop_case.headerimg,wechat_shop_casemenu.title,wechat_shop_case.imglist,wechat_shop_case.address,wechat_shop_case.looknumber,wechat_shop_case.fabulousnumber,wechat_shop_case.datetime FROM `wechat_shop_case` INNER JOIN wechat_shop_casemenu ON wechat_shop_case.casemenuid = wechat_shop_casemenu.id  WHERE `name` LIKE '%%' ORDER BY wechat_shop_case.sort desc LIMIT 0,10  
+
+[ 2019-08-21T15:01:00+08:00 ] 127.0.0.1 /index.php/Shop/Index/getHomeCaseList
+ERR: 1054:Unknown column 'headerimg' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`headerimg`,`name`,`imglist`,`remarks`,`doctor` FROM `wechat_shop_case` WHERE `ishome` = 1 ORDER BY sort desc 
+
+[ 2019-08-21T15:03:22+08:00 ] 127.0.0.1 /index.php/Shop/Index/getHomeCaseList
+ERR: 1054:Unknown column 'headerimg' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`headerimg`,`name`,`imglist`,`remarks`,`doctor` FROM `wechat_shop_case` WHERE `ishome` = 1 ORDER BY sort desc 
+
+[ 2019-08-21T15:52:01+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseDetails
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail`,`beforeprice`,`salenumber`,`` FROM `wechat_shop_commodity` WHERE ( id='1' ) LIMIT 1  
+
+[ 2019-08-21T15:52:25+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseDetails
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail`,`beforeprice`,`salenumber`,`` FROM `wechat_shop_commodity` WHERE ( id='1' ) LIMIT 1  
+

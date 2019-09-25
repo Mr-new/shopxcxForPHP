@@ -1,0 +1,104 @@
+[ 2019-09-05T15:03:26+08:00 ] 127.0.0.1 /index.php/Shop/Index/getHomeCaseList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_case_fabulous` WHERE ( caseid='7' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:03:34+08:00 ] 127.0.0.1 /index.php/Shop/Index/getHomeCaseList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_case_fabulous` WHERE ( caseid='7' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:10:23+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseDetails
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_case_fabulous` WHERE ( caseid='7' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:10:29+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_case_fabulous` WHERE ( caseid='7' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:20:23+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getIntegralGoodsDetails
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-05T15:21:02+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getIntegralGoodsDetails
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-05T15:21:08+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getIntegralGoodsDetails
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-05T15:21:11+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getIntegralGoodsDetails
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-05T15:23:37+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_case_fabulous` WHERE ( caseid='7' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:27:40+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseDetails
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_case_fabulous` WHERE ( caseid='7' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:28:55+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseDetails
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_case_fabulous` WHERE ( caseid='7' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:29:46+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseDetails
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_case_fabulous` WHERE ( caseid='7' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:32:17+08:00 ] 127.0.0.1 /index.php/Shop/Doctor/getDoctorList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_doctor_praise` WHERE ( doctor_id='1428' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:32:20+08:00 ] 127.0.0.1 /index.php/Shop/Commodity/getCommodityDetailsList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_commodity_collection` WHERE ( shopid=33 and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:35:50+08:00 ] 127.0.0.1 /index.php/Shop/Doctor/getDoctorList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_doctor_praise` WHERE ( doctor_id='1428' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:35:53+08:00 ] 127.0.0.1 /index.php/Shop/Doctor/getDoctorList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_doctor_praise` WHERE ( doctor_id='1428' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:38:53+08:00 ] 127.0.0.1 /index.php/Shop/Doctor/getDoctorDetails
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_follow` WHERE ( doctorid=1428 and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:42:53+08:00 ] 127.0.0.1 /index.php/Shop/Yanzhi/getCaseList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `wechat_shop_case_fabulous` WHERE ( caseid='7' and userid= ) LIMIT 1  
+
+[ 2019-09-05T15:45:43+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getUserIntegral
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-05T15:45:51+08:00 ] 127.0.0.1 /index.php/Shop/Integral/addUserIntegral
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `wechat_shop_user` SET `integral`=integral+6 WHERE ( id= )
+
+[ 2019-09-05T15:46:37+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getUserIntegral
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-05T15:46:40+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getUserIntegral
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-05T15:47:41+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getUserIntegral
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-05T15:48:48+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getUserIntegral
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-05T15:48:56+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getUserIntegral
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-05T15:50:58+08:00 ] 127.0.0.1 /index.php/Shop/Integral/getUserIntegral
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `integral` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+

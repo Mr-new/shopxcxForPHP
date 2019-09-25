@@ -1,0 +1,14 @@
+[ 2019-09-24T15:09:28+08:00 ] 127.0.0.1 /index.php/Admin/ShopConsultation/getConsultationList
+ERR: 1054:Unknown column 'sex' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`nickname`,`sex`,`tel`,`province`,`city`,`avatarurl` FROM `wechat_shop_user` WHERE ( id='3' ) LIMIT 1  
+
+[ 2019-09-24T15:10:42+08:00 ] 127.0.0.1 /index.php/Admin/ShopConsultation/getConsultationList?pageIndex=1&number=10&select_word=
+ERR: 1054:Unknown column 'sex' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`nickname`,`sex`,`tel`,`province`,`city`,`avatarurl` FROM `wechat_shop_user` WHERE ( id='3' ) LIMIT 1  
+
+[ 2019-09-24T15:20:08+08:00 ] 127.0.0.1 /index.php/Admin/ShopConsultation/getConsultationList?pageIndex=1&number=10&select_word=
+ERR: Call to a member function find() on array
+
+[ 2019-09-24T15:20:19+08:00 ] 127.0.0.1 /index.php/Admin/ShopConsultation/getConsultationList?pageIndex=1&number=10&select_word=
+ERR: Call to a member function find() on array
+

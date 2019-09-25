@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 use Common\Controller\BaseController;
 class ShopCouponController extends BaseController {
-    //获取预约信息列表
+    //获取优惠券列表
     public function getCouponList(){
         $select_word=I('select_word'); //搜索关键词
         $pageIndex=I('pageIndex');  //当前第几页
@@ -20,13 +20,18 @@ class ShopCouponController extends BaseController {
                 }else{
                     $list[$k]['isup']=false;
                 }
-                $tempArr=array();
-                $goodsIdArr = explode(',',$list[$k]['goodsid']);
-                foreach ($goodsIdArr as $key => $value){
-                    $temp=$shopTable->where("id='{$value}'")->field("id,name")->find();
-                    array_push($tempArr,$temp);
+                if(!empty($list[$k]['goodsid'])){
+                    $tempArr=array();
+                    $goodsIdArr = explode(',',$list[$k]['goodsid']);
+                    foreach ($goodsIdArr as $key => $value){
+                        $temp=$shopTable->where("id='{$value}'")->field("id,name")->find();
+                        array_push($tempArr,$temp);
+                    }
+                    $list[$k]['goodList']=$tempArr;
+                }else{
+                    $list[$k]['goodList']="";
                 }
-                $list[$k]['goodList']=$tempArr;
+
             }
             $result=array(
                 'success'=>true,

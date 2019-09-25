@@ -5,21 +5,30 @@ class IntegralController extends Controller {
     //获取用户积分
     public function getUserIntegral(){
         $userid=I('userid');
-        $table=M("shop_user");
-        $temp=$table->where("id=$userid")->getField("integral");
-        if($temp){
-            $result=array(
-                'success'=>true,
-                'msg'=>'查找成功',
-                'data' => $temp
-            );
-        }else{
+        if(empty($userid)){
             $result=array(
                 'success'=>false,
                 'msg'=>'查找失败',
                 'data' => 0
             );
+        }else{
+            $table=M("shop_user");
+            $temp=$table->where("id=$userid")->getField("integral");
+            if($temp){
+                $result=array(
+                    'success'=>true,
+                    'msg'=>'查找成功',
+                    'data' => $temp
+                );
+            }else{
+                $result=array(
+                    'success'=>false,
+                    'msg'=>'查找失败',
+                    'data' => 0
+                );
+            }
         }
+
         $this->ajaxReturn($result);
     }
     //签到获得积分

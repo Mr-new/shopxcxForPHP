@@ -1,0 +1,31 @@
+[ 2019-09-10T14:26:51+08:00 ] 127.0.0.1 /index.php/Shop/Bargain/getBargainCommodityList
+ERR: 1054:Unknown column 'defaultbargainprice' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail`,`defaultbargainprice`,`bargainprice`,`bargainstartdatetime`,`bargainenddatetime` FROM `wechat_shop_commodity` WHERE `bargainstartdatetime` <= '2019-09-10 14:26:51' AND `isbargain` = 1 AND `isup` = 1 AND `bargainenddatetime` >= '2019-09-10 14:26:51' ORDER BY sort desc 
+
+[ 2019-09-10T14:26:53+08:00 ] 127.0.0.1 /index.php/Shop/Bargain/getBargainCommodityList
+ERR: 1054:Unknown column 'defaultbargainprice' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail`,`defaultbargainprice`,`bargainprice`,`bargainstartdatetime`,`bargainenddatetime` FROM `wechat_shop_commodity` WHERE `bargainstartdatetime` > '2019-09-10 14:26:53' AND `isbargain` = 1 AND `isup` = 1 AND `bargainenddatetime` >= '2019-09-10 14:26:53' ORDER BY sort desc 
+
+[ 2019-09-10T14:26:54+08:00 ] 127.0.0.1 /index.php/Shop/Bargain/getBargainCommodityList
+ERR: 1054:Unknown column 'defaultbargainprice' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail`,`defaultbargainprice`,`bargainprice`,`bargainstartdatetime`,`bargainenddatetime` FROM `wechat_shop_commodity` WHERE `bargainstartdatetime` <= '2019-09-10 14:26:54' AND `isbargain` = 1 AND `isup` = 1 AND `bargainenddatetime` >= '2019-09-10 14:26:54' ORDER BY sort desc 
+
+[ 2019-09-10T14:27:06+08:00 ] 127.0.0.1 /index.php/Shop/Bargain/getBargainCommodityList
+ERR: 1054:Unknown column 'defaultbargainprice' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`thumbnail`,`defaultbargainprice`,`bargainprice`,`bargainstartdatetime`,`bargainenddatetime` FROM `wechat_shop_commodity` WHERE `bargainstartdatetime` <= '2019-09-10 14:27:06' AND `isbargain` = 1 AND `isup` = 1 AND `bargainenddatetime` >= '2019-09-10 14:27:06' ORDER BY sort desc 
+
+[ 2019-09-10T16:07:01+08:00 ] 127.0.0.1 /index.php/Shop/Bargain/randNumber?min=100&c=500
+ERR: Maximum function nesting level of '256' reached, aborting!
+
+[ 2019-09-10T16:08:24+08:00 ] 127.0.0.1 /index.php/Shop/Bargain/randNumber?min=100&c=500
+ERR: Maximum function nesting level of '256' reached, aborting!
+
+[ 2019-09-10T16:08:25+08:00 ] 127.0.0.1 /index.php/Shop/Bargain/randNumber?min=100&c=500
+ERR: Maximum function nesting level of '256' reached, aborting!
+
+[ 2019-09-10T16:09:10+08:00 ] 127.0.0.1 /index.php/Shop/Bargain/randNumber?min=100&c=500
+ERR: Maximum function nesting level of '256' reached, aborting!
+
+[ 2019-09-10T16:10:27+08:00 ] 127.0.0.1 /index.php/Shop/Bargain/randNumber?min=100&c=500
+ERR: Maximum function nesting level of '256' reached, aborting!
+

@@ -1,0 +1,8 @@
+[ 2019-09-17T09:56:25+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wechat_shop_case_process` WHERE ( id= ) LIMIT 1  
+
+[ 2019-09-17T09:57:37+08:00 ] 127.0.0.1 /index.php/Shop/Case/getCaseList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wechat_shop_case_process` WHERE ( id= ) LIMIT 1  
+

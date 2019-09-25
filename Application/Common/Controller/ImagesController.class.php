@@ -8,8 +8,9 @@ class ImagesController extends Controller {
     //上传图片
     public function upload(){
         $id=I('id')?I('id'):null;  //图片id
+        $imgurl=C('imgurl');
         $upload = new \Think\Upload();// 实例化上传类
-        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->maxSize   =     10485760 ;// 设置附件上传大小
         $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
         $upload->rootPath  =      './Public/uploadImages/'; // 设置附件上传根目录
         // 上传单个文件
@@ -49,12 +50,78 @@ class ImagesController extends Controller {
                 }
             }else{
                 $add=$images->add($data);
+                $url=$images->where("id=$add")->getField("image");
                 if($add){
                     $result=array(
                         'success'=>true,
                         'msg'=>'上传成功',
                         'data' => $add,
-                        'id' => ''
+                        'url' => $imgurl.$url
+                    );
+                }else{
+                    $result=array(
+                        'success'=>false,
+                        'msg'=>'数据库写入错误，请稍后重试',
+                        'data' => ''
+                    );
+                }
+            }
+        }
+        $this->ajaxReturn($result);
+    }
+    //上传视频
+    public function uploadVideo(){
+        $id=I('id')?I('id'):null;  //图片id
+        $imgurl=C('imgurl');
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     52428800 ;// 设置附件上传大小
+        $upload->exts      =     array();// 设置附件上传类型
+        $upload->rootPath  =      './Public/uploadImages/'; // 设置附件上传根目录
+        // 上传单个文件
+        $info   =   $upload->uploadOne($_FILES['video']);
+        if(!$info) {// 上传错误提示错误信息
+            $result=array(
+                'success'=>false,
+                'msg'=>'上传失败,请重新上传视频',
+                'data' => $upload->getError()
+            );
+        }else{// 上传成功 获取上传文件信息
+            $images=M('images');
+            $data['image']=$info['savepath'].$info['savename'];
+            $data['datetime']=date('Y-m-d H:i:s',time());
+            //如果id不为null则是更改图片，如果id为null则是上传图片
+            $beforeImg=$images->where("id=$id")->getField('image');
+            if($beforeImg){
+                unlink('./Public/uploadImages/'.$beforeImg);  //删除原来的图片
+                $change=$images->where("id=$id")->save($data);  //替换数据库图片路径
+                if($change){
+                    $url=$images->where("id=$id")->getField("image");
+                    $result=array(
+                        'success'=>true,
+                        'msg'=>'视频上传成功',
+                        'data' => array(
+                            'id'=>$id,
+                            'videoUrl'=>$imgurl.$url
+                        )
+                    );
+                }else{
+                    $result=array(
+                        'success'=>false,
+                        'msg'=>'替换失败，请重新上传图片',
+                        'data' => ''
+                    );
+                }
+            }else{
+                $add=$images->add($data);
+                if($add){
+                    $url=$images->where("id=$add")->getField("image");
+                    $result=array(
+                        'success'=>true,
+                        'msg'=>'视频上传成功',
+                        'data' => array(
+                            'id'=>$add,
+                            'videoUrl'=>$imgurl.$url
+                        )
                     );
                 }else{
                     $result=array(
@@ -152,6 +219,44 @@ class ImagesController extends Controller {
                     foreach ($imgIdArr as $key => $value){
                         $temp=$imagesTable->where("id='{$value}'")->getField("image");
                         array_push($tempArr,$imgurl.$temp);
+                    }
+                    $list[$k][$newName]=$tempArr;
+                }else{
+                    $list[$k][$newName]="";
+                }
+            }
+        }
+        return $list;
+    }
+    //用于vue渲染列表{以逗号分割id查找图片列表:$list->数据列表，$name->图片id字段名称，$newName->存放图片地址的字段名称}
+    public function spliceVueIdGetImgList($list,$name,$newName){
+        $imagesTable=M('images');
+        $imgurl=C('imgurl');
+        if (count($list) == count($list, 1)) {
+            //一维数组处理
+            if($list[$name]){
+                $tempArr=array();
+                $imgIdArr = explode(',',$list[$name]);
+                foreach ($imgIdArr as $k => $v){
+                    $temp['id']=$imgIdArr[$k];
+                    $temp['url']=$imgurl.$imagesTable->where("id='{$v}'")->getField("image");
+                    array_push($tempArr,$temp);
+                }
+                $list[$newName]=$tempArr;
+            }else{
+                $list[$newName]="";
+            }
+
+        }else{
+            //二维数组处理
+            foreach ($list as $k=>$v){
+                if($list[$k][$name]){
+                    $tempArr=array();
+                    $imgIdArr = explode(',',$list[$k][$name]);
+                    foreach ($imgIdArr as $key => $value){
+                        $temp['id']=$imgIdArr[$key];
+                        $temp['url']=$imgurl.$imagesTable->where("id='{$value}'")->getField("image");
+                        array_push($tempArr,$temp);
                     }
                     $list[$k][$newName]=$tempArr;
                 }else{

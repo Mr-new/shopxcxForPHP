@@ -1,0 +1,4 @@
+[ 2019-09-24T16:16:40+08:00 ] 127.0.0.1 /index.php/Shop/Yanzhi/getCaseList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `tel` FROM `wechat_shop_user` WHERE ( id= ) LIMIT 1  
+

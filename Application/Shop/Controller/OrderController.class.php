@@ -11,6 +11,7 @@ class OrderController extends Controller {
     public function getOrderMsg(){
         $orderArr=json_decode($_POST['orderArr']);
         $couponid=I('couponid');
+        $isseckill=I('isseckill');
         $shopTable=M('shop_commodity');
         $specsTable=M('shop_commodity_specs');
         $shopDetails=array();
@@ -18,7 +19,12 @@ class OrderController extends Controller {
         $tempArr=array();
         foreach ($orderArr as $k=>$v){
             $temp=$shopTable->where("id='{$orderArr[$k]->shopId}'")->field("id,name,thumbnail")->find();
-            $temp['specs']=$specsTable->where("id='{$orderArr[$k]->specsId}'")->field("id,title,price")->find();
+            if($isseckill==1){
+                $temp['specs']['title']="限时秒杀";
+                $temp['specs']['price']=$shopTable->where("id='{$orderArr[$k]->shopId}'")->getField("seckillprice");
+            }else{
+                $temp['specs']=$specsTable->where("id='{$orderArr[$k]->specsId}'")->field("id,title,price")->find();
+            }
             $temp['number']=$orderArr[$k]->number;
             array_push($tempArr,$temp);
             $sumPrice=$sumPrice+($temp['specs']['price']*$orderArr[$k]->number);
@@ -39,7 +45,8 @@ class OrderController extends Controller {
             $result=array(
                 'success'=>true,
                 'msg'=>'查找成功',
-                'data' => $shopDetails
+                'data' => $shopDetails,
+                's' => $isseckill
             );
         }else{
             $result=array(
@@ -89,16 +96,21 @@ class OrderController extends Controller {
     public function submitOrder(){
         $orderTable=M('shop_order');
         $specsTable=M('shop_commodity_specs');
-
+        $shopTable=M('shop_commodity');
+        $isseckill=I('isseckill');
         $orderArr=json_decode($_POST['orderArr']);
         $titleStr='';
         $priceStr='';
         foreach ($orderArr as $k=>$v){
-            $specsTitle=$specsTable->where("id='{$orderArr[$k]->specsId}'")->getField("title");
-            $specsPrice=$specsTable->where("id='{$orderArr[$k]->specsId}'")->getField("price");
+            if($isseckill==1){
+                $specsTitle="限时秒杀";
+                $specsPrice=$shopTable->where("id='{$orderArr[$k]->shopId}'")->getField("seckillprice");
+            }else{
+                $specsTitle=$specsTable->where("id='{$orderArr[$k]->specsId}'")->getField("title");
+                $specsPrice=$specsTable->where("id='{$orderArr[$k]->specsId}'")->getField("price");
+            }
             $titleStr=$titleStr.$specsTitle.',';
             $priceStr=$priceStr.$specsPrice.',';
-
         }
         $titleStr = substr($titleStr, 0, -1); // 利用字符串截取函数消除最后一个逗号
         $priceStr = substr($priceStr, 0, -1); // 利用字符串截取函数消除最后一个逗号

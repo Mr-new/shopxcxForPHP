@@ -131,7 +131,7 @@ class CollectionController extends Controller {
         $pageIndex=I('pageIndex');  //当前第几页
         $number=I('number');  //每页显示数量
         $map['userid']=$userid;
-        $caseCollectionList=$collectionTable->join("wechat_shop_case ON wechat_shop_case_collection.caseid = wechat_shop_case.id")->where($map)->field("wechat_shop_case.id,wechat_shop_case.headerimg,wechat_shop_case.name,wechat_shop_case.imglist,wechat_shop_case.address,wechat_shop_case.casemenuid,wechat_shop_case.looknumber,wechat_shop_case.fabulousnumber,wechat_shop_case.datetime")->order("wechat_shop_case_collection.datetime desc")->page($pageIndex.",$number")->select();
+        $caseCollectionList=$collectionTable->join("wechat_shop_case ON wechat_shop_case_collection.caseid = wechat_shop_case.id")->where($map)->field("wechat_shop_case.id,wechat_shop_case.name,wechat_shop_case.imglist,wechat_shop_case.casemenuid,wechat_shop_case.looknumber,wechat_shop_case.fabulousnumber,wechat_shop_case.datetime")->order("wechat_shop_case_collection.datetime desc")->page($pageIndex.",$number")->select();
         $count=$collectionTable->where($map)->count();// 查询满足要求的总记录数
         $sumPage=ceil($count/$number);  //总页数=总条数/每页显示的条数
         if($caseCollectionList){

@@ -41,16 +41,10 @@ class ShopCommodityController extends BaseController {
             $specsTable=M('shop_commodity_specs');
             foreach ($list as $k=>$v){
                 $list[$k]['category']=$categoryTable->where("id='{$list[$k]['categoryid']}'")->getField("title");
-                if($list[$k]['isup']==1){
-                    $list[$k]['isup']=true;
-                }else{
-                    $list[$k]['isup']=false;
-                }
-                if($list[$k]['hot']==1){
-                    $list[$k]['hot']=true;
-                }else{
-                    $list[$k]['hot']=false;
-                }
+                $list[$k]['isup']==1 ? $list[$k]['isup']=true : $list[$k]['isup']=false;  //是否上架
+                $list[$k]['hot']==1 ? $list[$k]['hot']=true : $list[$k]['hot']=false;  //是否热门商品
+                $list[$k]['isrecomd']==1 ? $list[$k]['isrecomd']=true : $list[$k]['isrecomd']=false;  //是否是商家推荐
+                $list[$k]['isseckill']==1 ? $list[$k]['isseckill']=true : $list[$k]['isseckill']=false;  //是否是秒杀商品
                 $temp=$images->spliceIdGetImgList($list[$k],'swiperimg','swiperimgList');
                 $tempArr=explode(",", $list[$k]['swiperimg']);
                 foreach ($temp['swiperimgList'] as $key=>$value){
@@ -91,6 +85,11 @@ class ShopCommodityController extends BaseController {
         $data['categoryid']=I('categoryid');
         $data['isup']=I('isup');
         $data['hot']=I('hot');
+        $data['isseckill']=I('isseckill');
+        $data['seckillprice']=I('seckillprice')?I('seckillprice'):null;
+        $data['startdatetime']=I('startdatetime')?I('startdatetime'):null;
+        $data['enddatetime']=I('enddatetime')?I('enddatetime'):null;
+        $data['isrecomd']=I('isrecomd');
         $data['details']=$_POST['details'];
         $data['sort']=I('sort')?I('sort'):0;
         $specs=json_decode($_POST['specs']);
